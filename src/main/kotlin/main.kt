@@ -2,7 +2,6 @@ fun main() {
     var online = 50
     var toText = agoToText(online)
     println("был(а) в сети $toText")
-
 }
 
 fun agoToText(online: Int): String {
@@ -24,6 +23,7 @@ fun agoToTextMinutes(online: Int): String {
         else -> "$minutes минут назад"
     }
 }
+
 fun agoToTextHours(online: Int): String {
     var hours = online/3600
     return when {
